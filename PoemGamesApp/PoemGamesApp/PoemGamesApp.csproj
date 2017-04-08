@@ -53,7 +53,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Components\IPoemGetter.cs" />
     <Compile Include="Components\PocoLineInfo.cs" />
+    <Compile Include="Components\PoemGetterFactory.cs" />
+    <Compile Include="Components\SimplePoemGetter.cs" />
     <Compile Include="Components\Utility.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
