@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button
+        android:id="@+id/MyButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="开始" />
+    <Button
+        android:text="提示"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnShow" />
+    <TextView
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtLine" />
+    <GridLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="376.5dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/gridLayout1"
+        android:background="@android:color/holo_blue_bright"
+        android:layout_marginRight="0.0dp">
+        <Button
+            android:id="@+id/bn1"
+            android:layout_marginRight="0.0dp" />
+        <Button
+            android:id="@+id/bn2" />
+        <Button
+            android:id="@+id/bn3" />
+    </GridLayout>
+    <GridLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="376.5dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/gridLayout1"
+        android:background="@android:color/holo_blue_bright">
+        <Button
+            android:id="@+id/bn4" />
+        <Button
+            android:id="@+id/bn5" />
+        <Button
+            android:id="@+id/bn6" />
+    </GridLayout>
+    <GridLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="376.5dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/gridLayout1"
+        android:background="@android:color/holo_blue_bright">
+        <Button
+            android:id="@+id/bn7" />
+        <Button
+            android:id="@+id/bn8" />
+        <Button
+            android:id="@+id/bn9" />
+        <Button
+            android:text="&lt;"
+            android:id="@+id/btnDelete"
+            android:layout_marginRight="0.0dp" />
+    </GridLayout>
+    <TextView
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtRes" />
+    <TextView
+        android:text="成功"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtSuccess"
+        android:visibility="visible" />
+</LinearLayout>
