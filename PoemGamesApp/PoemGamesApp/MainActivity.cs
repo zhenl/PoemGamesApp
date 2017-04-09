@@ -68,6 +68,7 @@ namespace PoemGamesApp
                     {
                         txtResult.Text = res.Substring(0, res.Length - 1);
                     }
+                    txtsuccess.Visibility = ViewStates.Invisible;
                 }
             };
 
@@ -125,7 +126,7 @@ namespace PoemGamesApp
             TextView txt = FindViewById<TextView>(Resource.Id.txtLine);
             TextView txtResult = FindViewById<TextView>(Resource.Id.txtRes);
             if (!string.IsNullOrEmpty(txtResult.Text) && txtResult.Text.Length == 5) return;
-
+            TextView txtsuccess = FindViewById<TextView>(Resource.Id.txtSuccess);
             var c = ((Button)sender).Text.ToString();
             //if (!txtResult.Text.Contains(c))
             if (GetCharCount(txtResult.Text, c) < GetCharCount(c))
@@ -133,8 +134,16 @@ namespace PoemGamesApp
 
             if (txtResult.Text == txt.Text)
             {
-                TextView txtsuccess = FindViewById<TextView>(Resource.Id.txtSuccess);
+                txtsuccess.Text = "完全正确！";
                 txtsuccess.Visibility = ViewStates.Visible;
+            }else if (txtResult.Text.Length == 5)
+            {
+                txtsuccess.Text = "猜错了...";
+                txtsuccess.Visibility = ViewStates.Visible;
+            }
+            else
+            {
+                txtsuccess.Visibility = ViewStates.Invisible;
             }
         }
 

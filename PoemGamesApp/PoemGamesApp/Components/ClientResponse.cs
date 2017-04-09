@@ -12,11 +12,11 @@ using Android.Widget;
 
 namespace PoemGamesApp.Components
 {
-    public class PoemGetterFactory
+    class ClientResponse
     {
-        public static IPoemGetter Create()
-        {
-            return new RestPoemGetter();
-        }
+        public string LineContent { get; set; }
+        public string PoemContent { get; set; }
+        public string Author { get; set; }
+        public string Title { get; set; }
     }
 }

@@ -12,11 +12,16 @@ using Android.Widget;
 
 namespace PoemGamesApp.Components
 {
-    public class PoemGetterFactory
+    public class RestPoemGetter : IPoemGetter
     {
-        public static IPoemGetter Create()
+        public int GetCountOfPoemLines()
         {
-            return new RestPoemGetter();
+            return RestUtility.GetLineCount();
+        }
+
+        public string GetPoemLineByIndex(int idx)
+        {
+            return RestUtility.GetLineContentByIndxe(idx);
         }
     }
 }

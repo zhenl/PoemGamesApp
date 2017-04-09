@@ -47,15 +47,21 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Mono.Android" />
     <Reference Include="mscorlib" />
+    <Reference Include="RestSharp">
+      <HintPath>..\..\..\..\..\Documents\Visual Studio 2017\Projects\WebApiTest\ConsoleApp1\bin\Debug\RestSharp.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Components\ClientResponse.cs" />
     <Compile Include="Components\IPoemGetter.cs" />
     <Compile Include="Components\PocoLineInfo.cs" />
     <Compile Include="Components\PoemGetterFactory.cs" />
+    <Compile Include="Components\RestPoemGetter.cs" />
+    <Compile Include="Components\RestUtility.cs" />
     <Compile Include="Components\SimplePoemGetter.cs" />
     <Compile Include="Components\Utility.cs" />
     <Compile Include="MainActivity.cs" />
